@@ -1,40 +1,3 @@
-
-% This is ``sig-alternate.tex'' V1.9 April 2009
-% This file should be compiled with V2.4 of ``sig-alternate.cls'' April 2009
-%
-% This example file demonstrates the use of the 'sig-alternate.cls'
-% V2.4 LaTeX2e document class file. It is for those submitting
-% articles to ACM Conference Proceedings WHO DO NOT WISH TO
-% STRICTLY ADHERE TO THE SIGS (PUBS-BOARD-ENDORSED) STYLE.
-% The 'sig-alternate.cls' file will produce a similar-looking,
-% albeit, 'tighter' paper resulting in, invariably, fewer pages.
-%
-% ----------------------------------------------------------------------------------------------------------------
-% This .tex file (and associated .cls V2.4) produces:
-%       1) The Permission Statement
-%       2) The Conference (location) Info information
-%       3) The Copyright Line with ACM data
-%       4) NO page numbers
-%
-% as against the acm_proc_article-sp.cls file which
-% DOES NOT produce 1) thru' 3) above.
-%
-% Using 'sig-alternate.cls' you have control, however, from within
-% the source .tex file, over both the CopyrightYear
-% (defaulted to 200X) and the ACM Copyright Data
-% (defaulted to X-XXXXX-XX-X/XX/XX).
-% e.g.
-% \CopyrightYear{2007} will cause 2007 to appear in the copyright line.
-% \crdata{0-12345-67-8/90/12} will cause 0-12345-67-8/90/12 to appear in the copyright line.
-%
-% ---------------------------------------------------------------------------------------------------------------
-% This .tex source is an example which *does* use
-% the .bib file (from which the .bbl file % is produced).
-% REMEMBER HOWEVER: After having produced the .bbl file,
-% and prior to final submission, you *NEED* to 'insert'
-% your .bbl file into your source .tex file so as to provide
-% ONE 'self-contained' source file.
-%
 % ================= IF YOU HAVE QUESTIONS =======================
 % Questions regarding the SIGS styles, SIGS policies and
 % procedures, Conferences etc. should be sent to
@@ -52,7 +15,7 @@
 \begin{document}
 %
 % --- Author Metadata here ---
-\conferenceinfo{WOODSTOCK}{'97 El Paso, Texas USA}
+%\conferenceinfo{WOODSTOCK}{'97 El Paso, Texas USA}
 %\CopyrightYear{2007} % Allows default copyright year (20XX) to be over-ridden - IF NEED BE.
 %\crdata{0-12345-67-8/90/01}  % Allows default copyright data (0-89791-88-6/97/05) to be over-ridden - IF NEED BE.
 % --- End of Author Metadata ---
@@ -84,31 +47,18 @@
 % without further effort on your part as the last section in
 % the body of your article BEFORE References or any Appendices.
 
-\numberofauthors{4} %  in this sample file, there are a *total*
-% of EIGHT authors. SIX appear on the 'first-page' (for formatting
-% reasons) and the remaining two appear in the \additionalauthors section.
-%
+\numberofauthors{4}
 \author{
-% You can go ahead and credit any number of authors here,
-% e.g. one 'row of three' or two rows (consisting of one row of three
-% and a second row of one, two or three).
-%
-% The command \alignauthor (no curly braces needed) should
-% precede each author name, affiliation/snail-mail address and
-% e-mail address. Additionally, tag each line of
-% affiliation/address with \affaddr, and tag the
-% e-mail address with \email.
-%
 % 1st. author
 \alignauthor Heidi J. C. Ellis\\                         
-			 \affaddr{Department of Computer Science and Information Technology}    \\
+%			 \affaddr{Department of Computer Science and Information Technology}    \\
        \affaddr{Western New England College}\\
        \affaddr{1215 Wilbraham Road}\\
        \affaddr{Springfield, MA 01119}\\
        \email{hellis@wnec.edu}  \\
 % 2nd. author
 \alignauthor Mel Chua\\
-			 \affaddr{Community Architecture Team}      \\
+%			 \affaddr{Community Architecture Team}      \\
        \affaddr{Red Hat}\\
        \affaddr{1801 Varsity Drive}\\
        \affaddr{Raleigh, North Carolina 27606}\\
@@ -116,13 +66,13 @@
 \and
 % 3rd. author
 \alignauthor  Matthew C. Jadud\\  
-			 \affaddr{Department of Computer Science}  \\
+%			 \affaddr{Department of Computer Science}  \\
        \affaddr{Allegheny College}\\
        \affaddr{520 N. Main St.}\\
        \affaddr{Meadville, PA 16335}\\
-       \email{matthew.c@jadud.com}
-\alignauthor  Gregory W. Hislop\titlenote{Moderator}\\
-       \affaddr{College of Information Science and Technology}\\
+       \email{matthew.c@jadud.com}    
+\alignauthor  Gregory W. Hislop (Moderator)\\
+%       \affaddr{College of Information Science and Technology}\\
        \affaddr{Drexel University}\\
 			 \affaddr{3141 Chestnut St.}
        \affaddr{Philadelphia, PA 19104}\\
@@ -135,14 +85,13 @@
 
 \maketitle
 
-% A category with the (minimum) three required fields
-\category{H.4}{Information Systems Applications}{Miscellaneous}
+% A category with the (minimum) three required fields  
+\category{K.3.2}{Computers and Education}{Computer and Information Science Education -- {\em Computer Science Education}}
 %A category including the fourth, optional field follows...
-\category{D.2.8}{Software Engineering}{Metrics}[complexity measures, performance measures]
+%\category{D.2.8}{Software Engineering}{Metrics}[complexity measures, performance measures]
+\terms{Human Factors}
 
-\terms{Theory}
-
-\keywords{ACM proceedings, \LaTeX, text tagging}
+\keywords{Open source software, faculty development, education}
 
 \section{Summary}
 There are many mature free open source software (FOSS) and documentation projects that provide excellent learning opportunities for students.  In the context of active learning, communities that surround open source projects are particularly interesting as they are transparent meritocracies that allow students to observe, study, and, best of all, contribute as part of their learning.  In exploring the learning opportunities that come from students engaging in open source projects, educators also believe that these projects are intrinsically motivating\cite{Bitzer2007160}, provide an opportunity for ongoing self-regulated learning in the context of working on large-scale projects\cite{1089794}, to interact with experienced developers and content creators, and to see meaningful, real-world outcomes as a result of their efforts.
@@ -159,11 +108,13 @@ In addition to the Software Engineering class working on the Caribou project, th
 \section{Matt Jadud\\Computing Majors and Beyond}
 %\noindent\textbf{}\\
 
-Large, open projects provide opportunities for what Jean Lave and Etienne Wenger describe as {\em legitimate peripheral participation}.[7] This means that it is possible for a classroom full of students studying computing (or literature or psychology) to contribute meaningfully to a project with hundreds or even thousands of contributors by beginning their work on the edge of a community (perhaps by fixing typos in a wiki page or reporting bugs), and if they continue contributing, they can grow naturally into increasingly central roles within the project. There is great power in immersing a class in a decentralized community of contributors, and {\em it is our responsibility as computing educators to bring our students to the world of open collaboration}.
+Large, open projects provide opportunities for what Jean Lave and Etienne Wenger describe as {\em legitimate peripheral participation}.[7] This means that it is possible for a classroom full of students studying computing (or literature or psychology) to contribute meaningfully to a project with hundreds or even thousands of contributors by beginning their work on the edge of a community (perhaps by fixing typos in a wiki page or reporting bugs), and if they continue contributing, they can grow naturally into increasingly central roles within the project. There is great power in immersing a class in a decentralized community of contributors, and {\em it is our responsibility as computing educators to introduce our students to the world of open collaboration}.
 
-In computing, open projects force students to communicate and collaborate in ways that traditional pedagogic approaches eschew: we get teamwork for free, and that matters[1]. In the context of robotics and embedded systems work at Allegheny College, students have contributed to open software and documentation projects (like the work done on the Flying Gator UAV[2] and a Creative Commons licensed text regarding parallel programming for for embedded systems[3]). In our course regarding human-centered design, students are working directly with open communities to improve the end-user's experience of their software[4]. During the spring semester of 2011, second-semester students will be introduced to distributed, collaborative experiences as they learn about data structures in the context of Android-based mobile devices.
-
-Outside of the context of computing, open projects provide a way for students to participate in a large project in ways that few students of the humanities ever experience. During the spring of 2010 and in collaboration of Art faculty member Darren Miller, we introduced 40 students from first-year seminar courses titled {\em Art and Activism} and {\em Technology and Activism} to the Fedora project[5]. Students wrote documentation, conducted interviews, designed logos, all while using mailing lists, wikis, and IRC to collaborate with the Fedora Marketing and Design communities. In the fall of 2010, we are providing 15 first-year students with opportunities to conduct interviews and lead discussion groups in IRC in the context of a first-year seminar titled {\em Creativity and Leadership}[6].
+In computing, open projects force students to communicate and collaborate in ways that traditional pedagogic approaches eschew: we get teamwork for free, and that matters[1]. %In the context of robotics and embedded systems work at Allegheny College, students have contributed to open software and documentation projects (like the work done on the Flying Gator UAV[2] and a Creative Commons licensed text regarding parallel programming for for embedded systems[3]). 
+For example, in our course regarding human-centered design, students work directly with open communities to improve the end-user's experience of living, shipping software[4]. %During the spring semester of 2011, second-semester students will be introduced to distributed, collaborative experiences as they learn about data structures in the context of Android-based mobile devices.
+Outside of the context of computing, open projects provide a way for students to participate in a large project in ways that few students of the humanities ever experience. %During the spring of 2010 and in collaboration of Art faculty member Darren Miller, we introduced 40 students from first-year seminar courses titled {\em Art and Activism} and {\em Technology and Activism} to the Fedora project[5]. 
+Students can write documentation, conduct interviews, design logos, all while using mailing lists, wikis, and IRC to collaborate with %the Fedora Marketing and Design
+open source communities. %In the fall of 2010, we are providing 15 first-year students with opportunities to conduct interviews and lead discussion groups in IRC in the context of a first-year seminar titled {\em Creativity and Leadership}[6].
 
 
 \begin{comment}
@@ -199,12 +150,7 @@ Finally, since OSS participation is less predictable, faculty may need to adjust
     
 %ACKNOWLEDGMENTS are optional
 \section{Acknowledgments}
-This section is optional; it is a location for you
-to acknowledge grants, funding, editing assistance and
-what have you.  In the present case, for example, the
-authors would like to thank Gerald Murray of ACM for
-his help in codifying this \textit{Author's Guide}
-and the \textbf{.cls} and \textbf{.tex} files that it describes.
+This material is based on work supported by the National Science Foundation under Grant Nos. DUE-0736874, DUE-0722137, DUE-0940925, and DUE-0940893 Any opinions, findings and conclusions or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the National Science Foundation (NSF).
 
 %
 % The following two commands are all you need in the
