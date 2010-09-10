@@ -1,0 +1,235 @@
+
+% This is ``sig-alternate.tex'' V1.9 April 2009
+% This file should be compiled with V2.4 of ``sig-alternate.cls'' April 2009
+%
+% This example file demonstrates the use of the 'sig-alternate.cls'
+% V2.4 LaTeX2e document class file. It is for those submitting
+% articles to ACM Conference Proceedings WHO DO NOT WISH TO
+% STRICTLY ADHERE TO THE SIGS (PUBS-BOARD-ENDORSED) STYLE.
+% The 'sig-alternate.cls' file will produce a similar-looking,
+% albeit, 'tighter' paper resulting in, invariably, fewer pages.
+%
+% ----------------------------------------------------------------------------------------------------------------
+% This .tex file (and associated .cls V2.4) produces:
+%       1) The Permission Statement
+%       2) The Conference (location) Info information
+%       3) The Copyright Line with ACM data
+%       4) NO page numbers
+%
+% as against the acm_proc_article-sp.cls file which
+% DOES NOT produce 1) thru' 3) above.
+%
+% Using 'sig-alternate.cls' you have control, however, from within
+% the source .tex file, over both the CopyrightYear
+% (defaulted to 200X) and the ACM Copyright Data
+% (defaulted to X-XXXXX-XX-X/XX/XX).
+% e.g.
+% \CopyrightYear{2007} will cause 2007 to appear in the copyright line.
+% \crdata{0-12345-67-8/90/12} will cause 0-12345-67-8/90/12 to appear in the copyright line.
+%
+% ---------------------------------------------------------------------------------------------------------------
+% This .tex source is an example which *does* use
+% the .bib file (from which the .bbl file % is produced).
+% REMEMBER HOWEVER: After having produced the .bbl file,
+% and prior to final submission, you *NEED* to 'insert'
+% your .bbl file into your source .tex file so as to provide
+% ONE 'self-contained' source file.
+%
+% ================= IF YOU HAVE QUESTIONS =======================
+% Questions regarding the SIGS styles, SIGS policies and
+% procedures, Conferences etc. should be sent to
+% Adrienne Griscti (griscti@acm.org)
+%
+% Technical questions _only_ to
+% Gerald Murray (murray@hq.acm.org)
+% ===============================================================
+%
+% For tracking purposes - this is V1.9 - April 2009
+
+\documentclass{sig-alternate}
+\usepackage{comment}
+
+\begin{document}
+%
+% --- Author Metadata here ---
+\conferenceinfo{WOODSTOCK}{'97 El Paso, Texas USA}
+%\CopyrightYear{2007} % Allows default copyright year (20XX) to be over-ridden - IF NEED BE.
+%\crdata{0-12345-67-8/90/01}  % Allows default copyright data (0-89791-88-6/97/05) to be over-ridden - IF NEED BE.
+% --- End of Author Metadata ---
+
+\title{Open Source Software Education}
+\subtitle{Opportunities and Challenges}
+%
+% You need the command \numberofauthors to handle the 'placement
+% and alignment' of the authors beneath the title.
+%
+% For aesthetic reasons, we recommend 'three authors at a time'
+% i.e. three 'name/affiliation blocks' be placed beneath the title.
+%
+% NOTE: You are NOT restricted in how many 'rows' of
+% ``name/affiliations'' may appear. We just ask that you restrict
+% the number of 'columns' to three.
+%
+% Because of the available 'opening page real-estate'
+% we ask you to refrain from putting more than six authors
+% (two rows with three columns) beneath the article title.
+% More than six makes the first-page appear very cluttered indeed.
+%
+% Use the \alignauthor commands to handle the names
+% and affiliations for an 'aesthetic maximum' of six authors.
+% Add names, affiliations, addresses for
+% the seventh etc. author(s) as the argument for the
+% \additionalauthors command.
+% These 'additional authors' will be output/set for you
+% without further effort on your part as the last section in
+% the body of your article BEFORE References or any Appendices.
+
+\numberofauthors{4} %  in this sample file, there are a *total*
+% of EIGHT authors. SIX appear on the 'first-page' (for formatting
+% reasons) and the remaining two appear in the \additionalauthors section.
+%
+\author{
+% You can go ahead and credit any number of authors here,
+% e.g. one 'row of three' or two rows (consisting of one row of three
+% and a second row of one, two or three).
+%
+% The command \alignauthor (no curly braces needed) should
+% precede each author name, affiliation/snail-mail address and
+% e-mail address. Additionally, tag each line of
+% affiliation/address with \affaddr, and tag the
+% e-mail address with \email.
+%
+% 1st. author
+\alignauthor Heidi J. C. Ellis\\                         
+			 \affaddr{Department of Computer Science and Information Technology}    \\
+       \affaddr{Western New England College}\\
+       \affaddr{1215 Wilbraham Road}\\
+       \affaddr{Springfield, MA 01119}\\
+       \email{hellis@wnec.edu}  \\
+% 2nd. author
+\alignauthor Mel Chua\\
+			 \affaddr{Community Architecture Team}      \\
+       \affaddr{Red Hat}\\
+       \affaddr{1801 Varsity Drive}\\
+       \affaddr{Raleigh, North Carolina 27606}\\
+       \email{mel@redhat.com}    
+\and
+% 3rd. author
+\alignauthor  Matthew C. Jadud\\  
+			 \affaddr{Department of Computer Science}  \\
+       \affaddr{Allegheny College}\\
+       \affaddr{520 N. Main St.}\\
+       \affaddr{Meadville, PA 16335}\\
+       \email{matthew.c@jadud.com}
+\alignauthor  Gregory W. Hislop\titlenote{Moderator}\\
+       \affaddr{College of Information Science and Technology}\\
+       \affaddr{Drexel University}\\
+			 \affaddr{3141 Chestnut St.}
+       \affaddr{Philadelphia, PA 19104}\\
+       \email{hislop@drexel.edu}
+}         
+%\date{30 July 1999}
+% Just remember to make sure that the TOTAL number of authors
+% is the number that will appear on the first page PLUS the
+% number that will appear in the \additionalauthors section.
+
+\maketitle
+
+% A category with the (minimum) three required fields
+\category{H.4}{Information Systems Applications}{Miscellaneous}
+%A category including the fourth, optional field follows...
+\category{D.2.8}{Software Engineering}{Metrics}[complexity measures, performance measures]
+
+\terms{Theory}
+
+\keywords{ACM proceedings, \LaTeX, text tagging}
+
+\section{Summary}
+There are many mature free open source software (FOSS) and documentation projects that provide excellent learning opportunities for students.  In the context of active learning, communities that surround open source projects are particularly interesting as they are transparent meritocracies that allow students to observe, study, and, best of all, contribute as part of their learning.  In exploring the learning opportunities that come from students engaging in open source projects, educators also believe that these projects are intrinsically motivating\cite{Bitzer2007160}, provide an opportunity for ongoing self-regulated learning in the context of working on large-scale projects\cite{1089794}, to interact with experienced developers and content creators, and to see meaningful, real-world outcomes as a result of their efforts.
+
+This panel will present four different perspectives on student involvement in OSS projects. Matt Jadud will present a variety of different ways that students can contribute to OSS projects beyond code including  testing, bug fixing, documentation and more. Mel Chua will present the industry perspective on student involvement in OSS projects including motivation for the OSS community to be open to students as well as the challenges presented by student involvement. Heidi Ellis will discuss how Humanitarian OSS can provide a welcoming environment for student learning including identifying some of the characteristics of more approachable OSS projects. Greg Hislop will present the viewpoint of faculty involving the students in OSS including a discussion of barriers to faculty involvement and how such barriers can be overcome. 
+
+\section{Heidi Ellis\\Humanitarian FOSS}
+FOSS projects with a humanitarian nature, Humanitarian FOSS or HFOSS, have been shown to motivate students in pursuing computing degrees while providing them with the opportunity to better the human condition in some fashion\cite{1536635}. Students across all levels of computing experience find participating in an HFOSS project motivating and students with less computing background indicate that participating in an HFOSS project has caused them to consider computing as a major or at least taking further computing courses\cite{1562959}. However, the ease of involving students in HFOSS projects varies across communities. 
+
+Heidi will discuss the factors that impact the ease or difficulty with which students become involved in an HFOSS project. She will report on experiences of students in a senior-level Software Engineering course at Western New England College. Students are working on Caribou which is a GNOME Accessibility project. Caribou is an onscreen keyboard that is accessible to users needing to interact with the computer using a pointing device. Students are involved in the GNOME Accessibility community and are investigating ways to make the application more robust. As part of the course, students in the Software Engineering course will introduce freshman Computer Science and Information Technology majors to HFOSS and hopefully generate excitement in computing in our new majors.
+
+In addition to the Software Engineering class working on the Caribou project, there are several Western New England College students who are participating in other HFOSS projects as part of independent study courses. These students are both CS and IT majors and are exploring ways that both groups can contribute to HFOSS projects. Heidi will report on the experiences of these students with joining and interacting with their respective HFOSS communities.  
+
+\section{Matt Jadud\\Computing Majors and Beyond}
+%\noindent\textbf{}\\
+
+Large, open projects provide opportunities for what Jean Lave and Etienne Wenger describe as {\em legitimate peripheral participation}.[7] This means that it is possible for a classroom full of students studying computing (or literature or psychology) to contribute meaningfully to a project with hundreds or even thousands of contributors by beginning their work on the edge of a community (perhaps by fixing typos in a wiki page or reporting bugs), and if they continue contributing, they can grow naturally into increasingly central roles within the project. There is great power in immersing a class in a decentralized community of contributors, and {\em it is our responsibility as computing educators to bring our students to the world of open collaboration}.
+
+In computing, open projects force students to communicate and collaborate in ways that traditional pedagogic approaches eschew: we get teamwork for free, and that matters[1]. In the context of robotics and embedded systems work at Allegheny College, students have contributed to open software and documentation projects (like the work done on the Flying Gator UAV[2] and a Creative Commons licensed text regarding parallel programming for for embedded systems[3]). In our course regarding human-centered design, students are working directly with open communities to improve the end-user's experience of their software[4]. During the spring semester of 2011, second-semester students will be introduced to distributed, collaborative experiences as they learn about data structures in the context of Android-based mobile devices.
+
+Outside of the context of computing, open projects provide a way for students to participate in a large project in ways that few students of the humanities ever experience. During the spring of 2010 and in collaboration of Art faculty member Darren Miller, we introduced 40 students from first-year seminar courses titled {\em Art and Activism} and {\em Technology and Activism} to the Fedora project[5]. Students wrote documentation, conducted interviews, designed logos, all while using mailing lists, wikis, and IRC to collaborate with the Fedora Marketing and Design communities. In the fall of 2010, we are providing 15 first-year students with opportunities to conduct interviews and lead discussion groups in IRC in the context of a first-year seminar titled {\em Creativity and Leadership}[6].
+
+
+\begin{comment}
+* [1] [[BegelBibTexChooseOne|Begel BibTeX]]
+* [2] http://rockalypse.org/blogs/flyinggator/
+* [3] http://concurrency.cc/book/
+* [4] http://rockalypse.org/courses/cmpsc303f10/
+* [5] http://fedoraproject.org/wiki/Allegheny_Activism_And_Fedora
+* [6] http://rockalypse.org/courses/fs101f10/
+* [7] [[LPPBibTeX|Lave & Wenger BibTeX]]
+\end{comment}
+
+\section{Mel Chua\\FOSS Community}
+
+Red Hat, Fedora, and other communities and players in the open source world have been seeking ways to encourage student participation in FOSS for many years, working on ``on-ramping'' efforts such as the POSSE workshop for professors, summer camps for high school students, undergraduate co-op mentorships, and more. My own work has focused on involving students at the postsecondary level.  Through working with the professors in the Teaching Open Source community, we've come to recognize a few points that need to be addressed in each FOSS-academia engagement order to successfully bridge the two worlds. I'd like to focus on three in particular:
+
+First, the engagement must focus on helping students become independent do-ers. We often talk about the importance of being able to be ``productively lost'' in open source projects; it's not enough for students to simply follow instructions to use open source tools they've been given. They need to learn not just how to use tools, but how to join a community of toolmakers. FOSS communities are full of self-sufficient and intrinsically motivated makers at many different stages in the process of learning the same sorts of things students will be doing in their future careers, and the artifacts they create as they learn (chat logs, blog posts, code and code reviews) are openly licensed and freely available so students can ``learn to do'' from (and alongside) role models beyond their campus context, with professors alongside to help them analyze and reflect on the experiences they're encountering.
+
+Second, the engagement must immerse students in whole-project thinking, seeing where their individual contributions fit into a large and complex system. Open source projects operate in the real world, and projects in the real world aren't just about writing isolated chunks of code. Large projects with distributed and diverse teams rely on many types of people - project management, design, documentation, marketing, translation, testing, support, and so forth - in order to get a software product out the door and in the hands of users in order to make a difference in those users' lives. Each of these roles is a needed one, and a role that students can learn to step into from day one; in order to do so, we need to help them understand how the job they're doing relates to the work of other teams in the project, and guide them through the process of negotiating their interfaces with people filling different roles and coming from different contexts than theirs.
+
+Third, the people involved in the engagement need to make sure that learning and insight flows in both directions. It's true that the academic world has much to learn from open source communities, but open source contributors also have a tremendous amount to learn from students and professors, such as how to critically reflect on their own growth as learners. FOSS projects, with their ``sink or swim'' mentality, are notoriously bad at helping newcomers participate. The diversity and retention rates of our communities could be much improved by thinking critically about the participatory scaffolding we're building to help people get started.  This is exactly what educators do year after year, getting students established as self-sufficient new contributors to a discipline that may initially be unfamiliar to them.
+
+\section{Greg Hislop\\Faculty Adoption}        
+It is generally easy to convince faculty that student participation in OSS offers excellent learning opportunities.  However, faculty belief in the potential value of OSS participation will not necessarily cause them to incorporate OSS activities into their courses.  There are a variety of issues and obstacles that may hinder adoption.
+
+To begin, OSS participation may require that faculty master new material.  Most likely, the faculty member will need to learn about the OSS project.  They may also need to learn about development processes and tools used by the OSS project.  Even if faculty are comfortable with commercial software development, they may not be familiar with the particular approaches used in OSS projects.  The total amount to learn can be considerable, and faculty time for professional development is scarce.
+
+Second, OSS participation requires interacting with an OSS project community.  These communities are often globally distributed, and consist of a mix of full-time professionals and part-time, volunteer participants.  In addition to taking time, community dependence and interaction introduces uncertainty into the course that may make faculty uncomfortable.  It also requires mutual adjustment in schedule and expectations as participants figure out how to map a fixed length term to an OSS project schedule.
+
+Third, the students who happen to land in a particular class section represent a varied workforce.  Knowledge, skill, and ability to learn and self-direct typically vary greatly across a set of students. In addition, student interest and motivation for a particular course can also impact results.  Faculty members need to not only grade student results, but most likely will need to manage student contribution to the OSS project to ensure that contribution quality is sufficient.
+
+Finally, since OSS participation is less predictable, faculty may need to adjust their teaching style away from lecturing or delivery of fixed material to more of a mentoring and co-learner approach.  While many faculty seem to find this change in style rewarding, some faculty may be less comfortable with this change in style.  In addition, mentoring and co-learning may require more faculty time, which is always a cause for concern.
+    
+%ACKNOWLEDGMENTS are optional
+\section{Acknowledgments}
+This section is optional; it is a location for you
+to acknowledge grants, funding, editing assistance and
+what have you.  In the present case, for example, the
+authors would like to thank Gerald Murray of ACM for
+his help in codifying this \textit{Author's Guide}
+and the \textbf{.cls} and \textbf{.tex} files that it describes.
+
+%
+% The following two commands are all you need in the
+% initial runs of your .tex file to
+% produce the bibliography for the citations in your paper.
+\bibliographystyle{abbrv}
+\bibliography{foss-education-panel} 
+% You must have a proper ``.bib'' file
+%  and remember to run:
+% latex bibtex latex latex
+% to resolve all references
+%
+% ACM needs 'a single self-contained file'!
+%                         
+
+%\subsection{References}        
+%\thebibliography{foss-education-panel}
+
+%Generated by bibtex from your ~.bib file.  Run latex,
+%then bibtex, then latex twice (to resolve references)
+%to create the ~.bbl file.  Insert that ~.bbl file into
+%the .tex source file and comment out
+%the command \texttt{{\char'134}}.
+
+% This next section command marks the start of
+% Appendix B, and does not continue the present hierarchy      
+               
+\end{document}
