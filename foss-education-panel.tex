@@ -11,7 +11,7 @@
 
 \documentclass{sig-alternate}
 \usepackage{comment}
-
+\usepackage{url}
 \begin{document}
 %
 % --- Author Metadata here ---
@@ -21,7 +21,8 @@
 % --- End of Author Metadata ---
 
 \title{Open Source Software Education}
-\subtitle{Opportunities and Challenges}
+%\subtitle{Opportunities and Challenges}
+
 %
 % You need the command \numberofauthors to handle the 'placement
 % and alignment' of the authors beneath the title.
@@ -47,11 +48,15 @@
 % without further effort on your part as the last section in
 % the body of your article BEFORE References or any Appendices.
 
-\numberofauthors{4}
-\author{
+\numberofauthors{2}  
+        
+\author{     
 % 1st. author
-\alignauthor Heidi J. C. Ellis\\                         
-%			 \affaddr{Department of Computer Science and Information Technology}    \\
+\alignauthor                   
+Heidi J. C. Ellis\\
+%\hspace{1cm} Heidi J. C. Ellis \hspace{0.5cm} Mel Chua \hspace{0.5cm} Matthew C. Jadud \hspace{0.5cm} Gregory W. Hislop\\            
+%\affaddr{\hspace{-1cm}Western New England \hspace{0.5cm} Red Hat \hspace{0.8cm} Allegheny College \hspace{1.5cm} Drexel University}\\
+			 %\affaddr{Department of Computer Science and Information Technology}    \\
        \affaddr{Western New England College}\\
        \affaddr{1215 Wilbraham Road}\\
        \affaddr{Springfield, MA 01119}\\
@@ -63,26 +68,13 @@
        \affaddr{1801 Varsity Drive}\\
        \affaddr{Raleigh, North Carolina 27606}\\
        \email{mel@redhat.com}    
-\and
-% 3rd. author
-\alignauthor  Matthew C. Jadud\\  
-%			 \affaddr{Department of Computer Science}  \\
-       \affaddr{Allegheny College}\\
-       \affaddr{520 N. Main St.}\\
-       \affaddr{Meadville, PA 16335}\\
-       \email{matthew.c@jadud.com}    
-\alignauthor  Gregory W. Hislop (Moderator)\\
-%       \affaddr{College of Information Science and Technology}\\
-       \affaddr{Drexel University}\\
-			 \affaddr{3141 Chestnut St.}
-       \affaddr{Philadelphia, PA 19104}\\
-       \email{hislop@drexel.edu}
-}         
+} 
+ 
 %\date{30 July 1999}
 % Just remember to make sure that the TOTAL number of authors
 % is the number that will appear on the first page PLUS the
 % number that will appear in the \additionalauthors section.
-
+                
 \maketitle
 
 % A category with the (minimum) three required fields  
@@ -94,30 +86,48 @@
 \keywords{Open source software, faculty development, education}
 
 \section{Summary}
-There are many mature free open source software (FOSS) and documentation projects that provide excellent learning opportunities for students.  In the context of active learning, communities that surround open source projects are particularly interesting as they are transparent meritocracies that allow students to observe, study, and, best of all, contribute as part of their learning.  In exploring the learning opportunities that come from students engaging in open source projects, educators also believe that these projects are intrinsically motivating\cite{Bitzer2007160}, provide an opportunity for ongoing self-regulated learning in the context of working on large-scale projects\cite{1089794}, to interact with experienced developers and content creators, and to see meaningful, real-world outcomes as a result of their efforts.
+There are many mature free open source software (FOSS) and documentation projects that provide excellent learning opportunities for students.  In the context of active learning, communities that surround open source projects are particularly interesting as they are transparent meritocracies that allow students to observe, study, and, best of all, contribute as part of their learning.  In exploring the learning opportunities that come from students engaging in open source projects, educators also believe that these projects are intrinsically motivating.%\cite{Bitzer2007160},
+provide an opportunity for ongoing self-regulated learning in the context of working on large-scale projects\cite{1089794}, to interact with experienced developers and content creators, and to see meaningful, real-world outcomes as a result of their efforts.
 
 This panel will present four different perspectives on student involvement in OSS projects. Matt Jadud will present a variety of different ways that students can contribute to OSS projects beyond code including  testing, bug fixing, documentation and more. Mel Chua will present the industry perspective on student involvement in OSS projects including motivation for the OSS community to be open to students as well as the challenges presented by student involvement. Heidi Ellis will discuss how Humanitarian OSS can provide a welcoming environment for student learning including identifying some of the characteristics of more approachable OSS projects. Greg Hislop will present the viewpoint of faculty involving the students in OSS including a discussion of barriers to faculty involvement and how such barriers can be overcome. 
 
-\section{Heidi Ellis\\Humanitarian FOSS}
+\section{Heidi Ellis -- Humanitarian FOSS}
 FOSS projects with a humanitarian nature, Humanitarian FOSS or HFOSS, have been shown to motivate students in pursuing computing degrees while providing them with the opportunity to better the human condition in some fashion\cite{1536635}. Students across all levels of computing experience find participating in an HFOSS project motivating and students with less computing background indicate that participating in an HFOSS project has caused them to consider computing as a major or at least taking further computing courses\cite{1562959}. However, the ease of involving students in HFOSS projects varies across communities. 
 
 Heidi will discuss the factors that impact the ease or difficulty with which students become involved in an HFOSS project. She will report on experiences of students in a senior-level Software Engineering course at Western New England College. Students are working on Caribou which is a GNOME Accessibility project. Caribou is an onscreen keyboard that is accessible to users needing to interact with the computer using a pointing device. Students are involved in the GNOME Accessibility community and are investigating ways to make the application more robust. As part of the course, students in the Software Engineering course will introduce freshman Computer Science and Information Technology majors to HFOSS and hopefully generate excitement in computing in our new majors.
 
 In addition to the Software Engineering class working on the Caribou project, there are several Western New England College students who are participating in other HFOSS projects as part of independent study courses. These students are both CS and IT majors and are exploring ways that both groups can contribute to HFOSS projects. Heidi will report on the experiences of these students with joining and interacting with their respective HFOSS communities.  
 
-\section{Matt Jadud\\Computing Majors and Beyond}
+\section{Matt Jadud -- Beyond Computing}%\\Computing Majors and Beyond}
 %\noindent\textbf{}\\
 
-Large, open projects provide opportunities for what Jean Lave and Etienne Wenger describe as {\em legitimate peripheral participation}.[7] This means that it is possible for a classroom full of students studying computing (or literature or psychology) to contribute meaningfully to a project with hundreds or even thousands of contributors by beginning their work on the edge of a community (perhaps by fixing typos in a wiki page or reporting bugs), and if they continue contributing, they can grow naturally into increasingly central roles within the project. There is great power in immersing a class in a decentralized community of contributors, and {\em it is our responsibility as computing educators to introduce our students to the world of open collaboration}.
+Large, open projects provide opportunities for what Jean Lave and Etienne Wenger describe as {\em legitimate peripheral participation}. This means that it is possible for a classroom full of students studying computing (or literature or psychology) to contribute meaningfully to a project with hundreds or even thousands of contributors by beginning their work on the edge of a community (perhaps by fixing typos in a wiki page or reporting bugs), and if they continue contributing, they can grow naturally into increasingly central roles within the project. There is great power in immersing a class in a decentralized community of contributors, and {\em it is our responsibility as computing educators to introduce students to the world of open collaboration}.
 
-In computing, open projects force students to communicate and collaborate in ways that traditional pedagogic approaches eschew: we get teamwork for free, and that matters[1]. %In the context of robotics and embedded systems work at Allegheny College, students have contributed to open software and documentation projects (like the work done on the Flying Gator UAV[2] and a Creative Commons licensed text regarding parallel programming for for embedded systems[3]). 
-For example, in our course regarding human-centered design, students work directly with open communities to improve the end-user's experience of living, shipping software[4]. %During the spring semester of 2011, second-semester students will be introduced to distributed, collaborative experiences as they learn about data structures in the context of Android-based mobile devices.
+In computing, open projects force students to communicate and collaborate in ways that traditional pedagogic approaches eschew: we get teamwork for free, and that matters\cite{1404522}. %In the context of robotics and embedded systems work at Allegheny College, students have contributed to open software and documentation projects (like the work done on the Flying Gator UAV[2] and a Creative Commons licensed text regarding parallel programming for for embedded systems[3]). 
+For example, in our course regarding human-centered design, students work directly with open communities to improve the end-user's experience of living, shipping software\footnote{\url{http://rockalypse.org/courses/cmpsc303f10/}}. %During the spring semester of 2011, second-semester students will be introduced to distributed, collaborative experiences as they learn about data structures in the context of Android-based mobile devices.
 Outside of the context of computing, open projects provide a way for students to participate in a large project in ways that few students of the humanities ever experience. %During the spring of 2010 and in collaboration of Art faculty member Darren Miller, we introduced 40 students from first-year seminar courses titled {\em Art and Activism} and {\em Technology and Activism} to the Fedora project[5]. 
 Students can write documentation, conduct interviews, design logos, all while using mailing lists, wikis, and IRC to collaborate with %the Fedora Marketing and Design
 open source communities. %In the fall of 2010, we are providing 15 first-year students with opportunities to conduct interviews and lead discussion groups in IRC in the context of a first-year seminar titled {\em Creativity and Leadership}[6].
 
 
-\begin{comment}
+\begin{comment}       
+	
+	\and
+	% 3rd. author
+	\alignauthor  Matthew C. Jadud\\  
+	%			 \affaddr{Department of Computer Science}  \\
+	       \affaddr{Allegheny College}\\
+	       \affaddr{520 N. Main St.}\\
+	       \affaddr{Meadville, PA 16335}\\
+	       \email{matthew.c@jadud.com}    
+	\alignauthor  Gregory W. Hislop (Moderator)\\
+	%       \affaddr{College of Information Science and Technology}\\
+	       \affaddr{Drexel University}\\
+				 \affaddr{3141 Chestnut St.}
+	       \affaddr{Philadelphia, PA 19104}\\
+	       \email{hislop@drexel.edu}	                 
+	
+	
 * [1] [[BegelBibTexChooseOne|Begel BibTeX]]
 * [2] http://rockalypse.org/blogs/flyinggator/
 * [3] http://concurrency.cc/book/
@@ -127,7 +137,7 @@ open source communities. %In the fall of 2010, we are providing 15 first-year st
 * [7] [[LPPBibTeX|Lave & Wenger BibTeX]]
 \end{comment}
 
-\section{Mel Chua\\FOSS Community}
+\section{Mel Chua -- FOSS Community}
 
 Red Hat, Fedora, and other open source communities world have worked on ``on-ramping'' student participation efforts in FOSS for years using projects such as the POSSE workshop for professors, summer camps for high school students, undergraduate co-op mentorships, and more.  My own work has focused on involving students at the postsecondary level.  Through working with the professors in the Teaching Open Source community, we've come to recognize some commmon elements of successful engagements for bridging the FOSS and academic worlds.
 
@@ -137,7 +147,7 @@ Second, the engagement must immerse students in whole-project thinking, seeing w
 
 Third, the people involved in the engagement need to make sure that learning and insight flows in both directions. The academic world can benefit from the authentic learning experiences and transparency of open source communities, but open source contributors also have a tremendous amount to learn from students and professors, such as how to reflect on their own growth as learners. FOSS projects, with their ``sink or swim'' mentality, are notoriously bad at helping newcomers participate. The diversity and retention rates of our communities could be much improved by thinking critically about the participatory scaffolding we build.  This is exactly what educators do year after year, getting students established as self-sufficient new contributors to a discipline that may initially be unfamiliar to them.
 
-\section{Greg Hislop\\Faculty Adoption}        
+\section{Greg Hislop -- Faculty Adoption}        
 It is generally easy to convince faculty that student participation in OSS offers excellent learning opportunities.  However, faculty belief in the potential value of OSS participation will not necessarily cause them to incorporate OSS activities into their courses.  There are a variety of issues and obstacles that may hinder adoption.
 
 To begin, OSS participation may require that faculty master new material.  Most likely, the faculty member will need to learn about the OSS project.  They may also need to learn about development processes and tools used by the OSS project.  Even if faculty are comfortable with commercial software development, they may not be familiar with the particular approaches used in OSS projects.  The total amount to learn can be considerable, and faculty time for professional development is scarce.
@@ -156,8 +166,9 @@ This material is based on work supported by the National Science Foundation unde
 % The following two commands are all you need in the
 % initial runs of your .tex file to
 % produce the bibliography for the citations in your paper.
-\bibliographystyle{abbrv}
-\bibliography{foss-education-panel} 
+%\bibliographystyle{abbrv}
+%\thebibliography{foss-education-panel}
+%\bibliography{foss-education-panel} 
 % You must have a proper ``.bib'' file
 %  and remember to run:
 % latex bibtex latex latex
@@ -167,7 +178,7 @@ This material is based on work supported by the National Science Foundation unde
 %                         
 
 %\subsection{References}        
-%\thebibliography{foss-education-panel}
+
 
 %Generated by bibtex from your ~.bib file.  Run latex,
 %then bibtex, then latex twice (to resolve references)
